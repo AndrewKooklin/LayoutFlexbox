@@ -1,0 +1,521 @@
+@font-face{
+        font-family: "Muller";
+        src: url("fonts/MullerMedium.woff2") format("woff2"),
+        url("fonts/MullerMedium.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        }
+
+html{
+  box-sizing: border-box;
+}
+
+::before,
+::after{
+  box-sizing: inherit;
+}
+
+body{
+  background-color: #E5E5E5;
+  margin: 0 auto;
+  max-width: 1170px;
+  font-family: 'Muller-MullerMedium', Arial, Helvetica, sans-serif;
+  font-size: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-vertical{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.container{
+  margin-top: 70px;
+}
+
+.header{
+  margin-top: 30px;
+}
+
+.header-start{
+  align-items: center;
+}
+
+.header-logo{
+  text-decoration: none;
+}
+
+.log-in{
+  padding-left: 25px;
+  background-image: url("../img/keyboard_tab.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  text-decoration: none;
+  font-weight: 400;
+  color: #CC9933;
+  font-size: 16px;
+}
+
+.contacts-address{
+  margin-left: 34px;
+  margin-right: auto;
+}
+
+.contact-item{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    color: #666666;
+    font-size: 20px;
+}
+
+.nav{
+  margin-top: 30px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.header-list{
+  padding-inline-start: 0px;
+  width: fit-content;
+  list-style-type: none;
+}
+
+.header-list-item{
+  align-items: center;
+}
+
+.item{
+  margin: 0;
+  padding-left: 44px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-link{
+  text-decoration: none;
+  font-weight: 400;
+  color: #666666;
+  font-size: 16px;  
+}
+
+.border{
+  margin: 10px 0 10px 56px;
+  border-left: 1px solid #E1E1E1;
+  height: 50px;
+}
+
+.btn-nav{
+  border: 1px solid #CC9933;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  color: #CC9933;
+  background-color: #FFFFFF;
+}
+
+.btn-want{
+  width: 107px;
+  height: 42px;
+  padding: 0;
+  margin:14px 0 14px 57px;
+
+}
+
+.btn-backcall{
+  width: 177px;
+  height: 42px;
+  padding: 0;
+  margin:14px 0 14px 40px;
+}
+
+.section-title{
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 0 0 40px;
+}
+
+.card-special{
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.special-group:not(:last-child){
+  margin: 0 23px 23px 0;
+}
+
+.card-special-text{
+  padding: 40px 0 40px 40px;
+}
+
+.card-special-1{
+  width: 573px;
+  background: url(../img/maldives.jpg) no-repeat;
+  border-radius: 10px; 
+}
+
+.card-special-2{
+  width: 573px;
+  background: url(../img/crete.jpg) no-repeat;
+  border-radius: 10px;
+}
+
+.card-special-3{
+  width: 573px;
+  background: url(../img/luxury.jpg) no-repeat;;
+  border-radius: 10px;
+}
+
+.card-special-name-small{
+  margin: 0;
+  max-width: 350px;
+  color:#FFFFFF;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.card-special-price-small{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+.card-special-name-big{
+  margin: 0;
+  padding-top: 171px;
+  max-width: 350px;
+  color:#FFFFFF;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.card-special-price-big{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+.card-special-details{
+  display: block;
+  background-image: url(../img/more.png);
+  background-repeat: no-repeat;
+  height: 16px;
+  width:110px;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 47px;
+}
+
+.description{
+  width: 888px;
+  margin: 11px 0 0 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.card-services{
+  margin-top: 20px;
+}
+
+.service-item{
+  width: 573px;
+}
+
+.service-item:not(:nth-last-child(2),:nth-last-child(1)){ 
+  margin-bottom: 23px;
+}
+
+.service-item:not(:nth-child(2n)){ 
+  margin-right: 23px;
+}
+
+.image-service1{
+  background: url(../img/glasses.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.image-service2{
+  background: url(../img/table.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.image-service3{
+  background: url(../img/swimming-pool.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.image-service4{
+  background: url(../img/cars.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.card-services-content{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.card-img{
+  border-radius: 15px 15px 0 0;
+}
+
+.card-acc-img{
+  position: relative;
+  border-radius: 15px;
+}
+
+.card-services-name{
+  display: block;
+  width: max-content;
+  height: 40px;
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #CC9933;
+  margin: 190px 0 0 45px;
+  padding: 0;
+}
+
+.image-service-link1{
+  background: url(../img/image-link1.png) no-repeat;
+  width: 302px;
+}
+
+.image-service-link2{
+  background: url(../img/image-link2.png) no-repeat;
+  width: 258px;
+}
+
+.image-service-link3{
+  background: url(../img/image-link3.png) no-repeat;
+  width: 371px;
+}
+
+.image-service-link4{
+  background: url(../img/image-link4.png) no-repeat;
+  width: 378px;
+}
+
+.card-services-description{
+  width: 402px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color:#000000;
+  margin: 0 0 50px 45px;
+}
+
+.card-benefits{
+  margin: 30px 0 0 0;
+}
+
+.card-benefit-item{
+  width: 275px;
+  height: fit-content;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.card-benefit-item:not(:nth-child(1),:nth-child(2), :nth-child(3), :nth-child(4)){ 
+  margin-top: 23px;
+}
+
+.card-benefit-item:not(:nth-child(4n)){ 
+  margin-right: 23px;
+}
+
+.back-image1{
+  background-image: url(../img/bathtub.svg); 
+}
+
+.back-image2{
+  background-image: url(../img/hanger.svg);  
+}
+
+.back-image3{
+  background-image: url(../img/heating.svg);  
+}
+
+.back-image4{
+  background-image: url(../img/hotel-key.svg);  
+}
+
+.back-image5{
+  background-image: url(../img/parking.svg);  
+}
+
+.back-image6{
+  background-image: url(../img/reception.svg);  
+}
+
+.back-image7{
+  background-image: url(../img/security-box.svg);  
+}
+
+.back-image8{
+  background-image: url(../img/swimming-pool.svg);  
+}
+
+.back-image-properties{
+  background-size: 15%;
+  background-position: 45px 40px;
+  background-repeat: no-repeat;
+}
+
+.card-benefit-description{
+  width: 188px;
+  padding: 76px 0 40px 45px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.card-accommodation{
+  margin: 30px 0 0 0;
+}
+
+.card-accommodation-content:not(:nth-child(1),:nth-child(2), :nth-child(3)){ 
+  margin-top: 23px;
+}
+
+.card-accommodation-content:not(:nth-child(3n)){ 
+  margin-right: 23px;
+}
+
+.card-accommodation-content{
+  width: 374px;
+  height: fit-content;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.star{
+  margin-top: 36px;
+}
+
+.card-acc-price{
+  display: block;
+  width: fit-content;
+  margin: 36px 0 0 45px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.img-accomodation-1{
+  width: 14px;
+  height: 14px;
+  margin: 0 0 0 44px;
+}
+
+.img-accomodation-2{
+  width: 14px;
+  height: 14px;
+  margin: 0 0 0 6px;
+}
+
+.acc-name, .acc-country{
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 16px 0 0 45px;
+}
+
+.acc-country{
+  color: #999999;
+}
+
+.btn-acc{
+  width: fit-content;
+  background-color: #FFFFFF;
+  border: 1px solid #CC9933;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 20px 0 41px 45px;
+  padding: 13px 20px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #CC9933;
+  text-align: center;
+  cursor: pointer;
+}
+
+.last-card{
+  position: relative;
+  background-image: url(../img/acc9.jpg);
+  background-repeat: no-repeat;
+  width: 374px;
+  height: inherit;
+}
+
+.card-accommodation-more{
+  position: absolute;
+  left: 54px;
+  bottom: 27px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.arrow-acc{
+  display: inline;
+  vertical-align:middle;
+  box-sizing: border-box;
+}
